@@ -27,8 +27,8 @@ body {
     background: var(--paper);
     color: var(--ink);
     font-family: var(--sans);
-    font-size: 15px;
-    line-height: 1.7
+    font-size: 16px;
+    line-height: 1.75
 }
 
 a {
@@ -91,9 +91,9 @@ img {
 
 .eyebrow {
     display: block;
-    font-size: 10px;
+    font-size: 11.5px;
     line-height: 1.4;
-    letter-spacing: .17em;
+    letter-spacing: .14em;
     font-weight: 800;
     color: #68776b
 }
@@ -137,10 +137,10 @@ img {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    padding: 14px 20px;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: .04em;
+    padding: 14px 22px;
+    font-size: 13.5px;
+    font-weight: 700;
+    letter-spacing: .03em;
     border: 1px solid transparent;
     cursor: pointer;
     transition: transform .3s cubic-bezier(.16, 1, .3, 1), box-shadow .3s cubic-bezier(.16, 1, .3, 1), background-color .25s ease, border-color .25s ease, color .25s ease
@@ -256,12 +256,12 @@ img {
 .topline {
     background: var(--forest);
     color: #e4ebe3;
-    font-size: 10px;
-    letter-spacing: .05em
+    font-size: 13px;
+    letter-spacing: .03em
 }
 
 .topline-inner {
-    height: 34px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -275,7 +275,7 @@ img {
 
 .topline-tagline {
     color: #d5e0d5;
-    letter-spacing: .06em
+    letter-spacing: .04em
 }
 
 .topline-right {
@@ -308,7 +308,7 @@ img {
 
 .topline-divider {
     width: 1px;
-    height: 12px;
+    height: 14px;
     background: rgba(255, 255, 255, .2);
     display: inline-block
 }
@@ -318,6 +318,7 @@ img {
     align-items: center;
     gap: 7px;
     color: #e4ebe3;
+    font-size: 13px;
     font-weight: 700;
     transition: color .2s ease, transform .2s ease
 }
@@ -337,7 +338,7 @@ img {
 }
 
 .header-inner {
-    height: 84px;
+    height: 88px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -352,37 +353,37 @@ img {
 }
 
 .brand-logo {
-    height: 46px;
+    height: 48px;
     width: auto;
-    max-height: 50px;
+    max-height: 52px;
     object-fit: contain;
     display: block
 }
 
 .brand-mark {
-    font: 400 36px/.9 var(--display);
+    font: 400 38px/.9 var(--display);
     letter-spacing: -.08em;
     color: var(--forest)
 }
 
 .brand-mark span {
-    font-size: 23px;
+    font-size: 24px;
     color: #8a9a88;
     margin: 0 2px
 }
 
 .brand-name {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.4;
     font-weight: 800;
-    letter-spacing: .11em;
+    letter-spacing: .1em;
     color: var(--forest)
 }
 
 .brand-name small {
     display: block;
-    font-size: 8px;
-    letter-spacing: .18em;
+    font-size: 10px;
+    letter-spacing: .15em;
     color: #7a867b;
     margin-top: 4px
 }
@@ -394,11 +395,11 @@ img {
 }
 
 .desktop-nav a {
-    font-size: 10px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     color: #525e55;
     position: relative;
-    padding: 9px 0
+    padding: 10px 0
 }
 
 .desktop-nav a:after {
@@ -422,8 +423,9 @@ img {
 }
 
 .header-cta {
-    padding: 12px 15px;
-    font-size: 10px;
+    padding: 11px 18px;
+    font-size: 13px;
+    font-weight: 700;
     white-space: nowrap
 }
 
@@ -515,8 +517,8 @@ img {
     display: flex;
     justify-content: space-between;
     color: #dbe3da;
-    font-size: 9px;
-    letter-spacing: .15em
+    font-size: 12px;
+    letter-spacing: .1em
 }
 
 .hero-bottom a {
@@ -531,8 +533,8 @@ img {
     right: 32px;
     bottom: 35px;
     color: #fff;
-    font-size: 11px;
-    letter-spacing: .1em
+    font-size: 13px;
+    letter-spacing: .08em
 }
 
 .hero-index span {
@@ -652,8 +654,8 @@ img {
     left: 18px;
     background: rgba(247, 247, 243, .92);
     padding: 7px 10px;
-    font-size: 9px;
-    letter-spacing: .12em
+    font-size: 11.5px;
+    letter-spacing: .08em
 }
 
 .service-card-copy {
@@ -661,7 +663,7 @@ img {
 }
 
 .service-card-copy .eyebrow {
-    font-size: 9px
+    font-size: 11.5px
 }
 
 .service-card-title {
@@ -923,13 +925,13 @@ img {
 .footer {
     background: #1c2d25;
     color: #f3f5f0;
-    padding: 70px 0 22px
+    padding: 72px 0 28px
 }
 
 .footer-main {
     display: grid;
     grid-template-columns: 1.5fr .7fr 1fr;
-    gap: 100px;
+    gap: clamp(40px, 6vw, 90px);
     padding-bottom: 65px
 }
 
@@ -951,16 +953,16 @@ img {
 }
 
 .brand-logo-footer {
-    height: 42px;
+    height: 44px;
     width: auto;
     display: block
 }
 
 .footer-brand>p {
     color: #b9c5b9;
-    max-width: 310px;
-    font-size: 12px;
-    line-height: 1.9;
+    max-width: 340px;
+    font-size: 14.5px;
+    line-height: 1.8;
     margin: 25px 0
 }
 
@@ -969,12 +971,15 @@ img {
     align-items: center;
     gap: 8px;
     color: #c2d1c0;
-    font-size: 10px
+    font-size: 12.5px
 }
 
 .footer h3 {
-    font-size: 11px;
-    letter-spacing: .1em;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #e4ece3;
     margin: 5px 0 22px
 }
 
@@ -982,12 +987,12 @@ img {
 .footer-contact {
     display: flex;
     flex-direction: column;
-    gap: 13px
+    gap: 14px
 }
 
 .footer-links a,
 .footer-contact a {
-    font-size: 11px;
+    font-size: 14px;
     color: #c1ccc1
 }
 
@@ -1008,17 +1013,18 @@ img {
 }
 
 .footer-contact span {
-    max-width: 230px
+    max-width: 250px;
+    line-height: 1.6
 }
 
 .footer-bottom {
     border-top: 1px solid #405147;
-    padding-top: 20px;
+    padding-top: 22px;
     display: flex;
     gap: 30px;
     align-items: center;
     color: #aebbb0;
-    font-size: 9px
+    font-size: 13px
 }
 
 .footer-bottom span {
@@ -1706,11 +1712,11 @@ img {
 
 @media(max-width:1100px) {
     .desktop-nav {
-        gap: 13px
+        gap: 14px
     }
 
     .desktop-nav a {
-        font-size: 9px
+        font-size: 13px
     }
 
     .header-inner {
@@ -1722,15 +1728,16 @@ img {
     }
 
     .brand-mark {
-        font-size: 31px
+        font-size: 32px
     }
 
     .brand-name {
-        font-size: 9px
+        font-size: 11.5px
     }
 
     .header-cta {
-        padding: 10px
+        padding: 10px 14px;
+        font-size: 12.5px
     }
 
     .intro-grid {
@@ -1770,9 +1777,9 @@ img {
     }
 
     .mobile-nav a {
-        padding: 13px 0;
+        padding: 14px 0;
         border-bottom: 1px solid var(--line);
-        font-size: 13px
+        font-size: 15.5px
     }
 
     .mobile-nav a.active {
@@ -1784,7 +1791,9 @@ img {
         gap: 10px;
         align-items: center;
         color: var(--forest);
-        font-weight: 800
+        font-size: 15.5px;
+        font-weight: 800;
+        padding-top: 6px
     }
 
     .hero {
@@ -1862,7 +1871,7 @@ img {
 
 @media(max-width:620px) {
     body {
-        font-size: 14px
+        font-size: 15px
     }
 
     .container {
@@ -1874,7 +1883,7 @@ img {
     }
 
     .topline-inner {
-        height: 32px;
+        height: 36px;
         justify-content: space-between
     }
 
@@ -1883,24 +1892,24 @@ img {
     }
 
     .topline-socials {
-        gap: 6px
+        gap: 8px
     }
 
     .topline-social-link {
-        padding: 2px;
-        font-size: 9px
+        padding: 3px;
+        font-size: 12px
     }
 
     .topline-phone {
-        font-size: 9px
+        font-size: 12px
     }
 
     .header-inner {
-        height: 72px
+        height: 76px
     }
 
     .brand-logo {
-        height: 38px
+        height: 40px
     }
 
     .brand-logo-footer {
