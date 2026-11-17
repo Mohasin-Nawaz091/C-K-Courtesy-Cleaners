@@ -29,7 +29,7 @@ export function Header() {
                 aria-label="Follow C&K Courtesy Cleaners on Facebook"
                 className="topline-social-link"
               >
-                <Facebook size={13} />
+                <Facebook size={14} />
               </a>
               <a
                 href={business.socials.instagram}
@@ -38,7 +38,7 @@ export function Header() {
                 aria-label="Follow C&K Courtesy Cleaners on Instagram"
                 className="topline-social-link"
               >
-                <Instagram size={13} />
+                <Instagram size={14} />
               </a>
               <a
                 href={business.socials.tiktok}
@@ -47,12 +47,12 @@ export function Header() {
                 aria-label="Follow C&K Courtesy Cleaners on TikTok"
                 className="topline-social-link"
               >
-                <TikTok size={13} />
+                <TikTok size={14} />
               </a>
             </div>
             <span className="topline-divider" aria-hidden="true" />
             <a href={`tel:${business.phoneLink}`} className="topline-phone">
-              <Phone size={13} /> {business.phoneDisplay}
+              <Phone size={14} /> {business.phoneDisplay}
             </a>
           </div>
         </div>
@@ -76,7 +76,7 @@ export function Header() {
               </Link>
             ))}
           </nav>
-          <Link href="/contact" className="button button-dark header-cta">Get in touch <ArrowUpRight size={15} /></Link>
+          <Link href="/contact" className="button button-dark header-cta">Get in touch <ArrowUpRight size={16} /></Link>
           <button className="menu-toggle" aria-label={open ? "Close navigation menu" : "Open navigation menu"} aria-expanded={open} onClick={() => setOpen(!open)}>
             {open ? <X /> : <Menu />}
           </button>

@@ -39,7 +39,7 @@ export function Footer() {
       <div className="container footer-bottom">
         <span>© {new Date().getFullYear()} C&K Courtesy Cleaners. All rights reserved.</span>
         <Link href="/privacy-policy">Privacy</Link>
-        <a href={business.googleMaps} target="_blank" rel="noreferrer">Find us <ArrowUpRight size={13}/></a>
+        <a href={business.googleMaps} target="_blank" rel="noreferrer">Find us <ArrowUpRight size={14}/></a>
       </div>
     </footer>
   );
