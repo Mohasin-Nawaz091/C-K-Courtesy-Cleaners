@@ -7,6 +7,8 @@ import logoImg from "../../assets/logo.png";
 export function Footer() {
   return (
     <footer className="footer">
+      <div className="footer-bg" aria-hidden="true" />
+      <div className="footer-overlay" aria-hidden="true" />
       <div className="container footer-main">
         <div className="footer-brand">
           <Link href="/" className="brand brand-footer" aria-label="C&K Courtesy Cleaners home">

@@ -923,9 +923,38 @@ img {
 }
 
 .footer {
-    background: #1c2d25;
+    position: relative;
+    background: #16241d;
     color: #f3f5f0;
-    padding: 72px 0 28px
+    padding: 72px 0 28px;
+    overflow: hidden;
+    isolation: isolate
+}
+
+.footer-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url("https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=2000&q=85");
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    opacity: .24;
+    z-index: 0;
+    pointer-events: none;
+    transform: scale(1.03)
+}
+
+.footer-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(22, 36, 28, .90) 0%, rgba(14, 23, 18, .96) 100%);
+    z-index: 1;
+    pointer-events: none
+}
+
+.footer .container {
+    position: relative;
+    z-index: 2
 }
 
 .footer-main {
