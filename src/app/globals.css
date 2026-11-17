@@ -762,11 +762,11 @@ img {
 }
 
 .wet-stats strong {
-    font-size: 11px
+    font-size: 13.5px
 }
 
 .wet-stats span {
-    font-size: 10px;
+    font-size: 12px;
     color: var(--muted)
 }
 
@@ -808,13 +808,13 @@ img {
 
 .values-grid article p,
 .about-values p {
-    font-size: 12px;
-    line-height: 1.9;
+    font-size: 14px;
+    line-height: 1.8;
     color: var(--muted)
 }
 
 .values-grid .eyebrow {
-    font-size: 9px
+    font-size: 11.5px
 }
 
 .story-section {
@@ -1178,7 +1178,7 @@ img {
 }
 
 .editorial-note {
-    font-size: 11px;
+    font-size: 13px;
     color: #7a837a;
     line-height: 1.7;
     margin-top: 28px;
@@ -1214,14 +1214,14 @@ img {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding-bottom: clamp(35px, 5vh, 55px)x
+    padding-bottom: clamp(35px, 5vh, 55px)
 }
 
 .back-link {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 11px;
+    font-size: 13.5px;
     color: #e2e9e1;
     margin-bottom: auto;
     margin-top: 35px
@@ -1315,9 +1315,9 @@ img {
 }
 
 .wet-step-grid article>span {
-    font-size: 10px;
+    font-size: 12.5px;
     color: #b6c7b4;
-    letter-spacing: .12em
+    letter-spacing: .08em
 }
 
 .wet-step-grid article>svg {
@@ -1571,15 +1571,15 @@ img {
 
 .contact-details small {
     display: block;
-    font-size: 9px;
-    letter-spacing: .12em;
+    font-size: 11px;
+    letter-spacing: .1em;
     color: #829083;
     font-weight: 800
 }
 
 .contact-details strong {
     display: block;
-    font-size: 12px;
+    font-size: 14.5px;
     overflow-wrap: anywhere
 }
 
@@ -1588,7 +1588,7 @@ img {
 }
 
 .hours-note p {
-    font-size: 11px;
+    font-size: 13.5px;
     color: var(--muted);
     margin: 5px 0
 }
@@ -1608,8 +1608,8 @@ img {
     display: flex;
     flex-direction: column;
     gap: 7px;
-    font-size: 10px;
-    font-weight: 800;
+    font-size: 12.5px;
+    font-weight: 700;
     color: #536054
 }
 
@@ -1645,12 +1645,12 @@ img {
 }
 
 .form-status {
-    font-size: 11px;
+    font-size: 13.5px;
     color: var(--forest)
 }
 
 .form-hint {
-    font-size: 10px;
+    font-size: 12px;
     color: #899189;
     margin: 0
 }
@@ -1692,16 +1692,16 @@ img {
 }
 
 .map-caption strong {
-    font: 400 20px var(--display)
+    font: 400 21px var(--display)
 }
 
 .map-caption span {
-    font-size: 10px;
+    font-size: 12.5px;
     color: var(--muted)
 }
 
 .map-caption a {
-    font-size: 10px;
+    font-size: 12.5px;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -1958,7 +1958,7 @@ img {
 
     .hero-bottom {
         bottom: 22px;
-        font-size: 8px
+        font-size: 11px
     }
 
     .hero-index {
@@ -2238,11 +2238,11 @@ img {
     }
 
     .map-caption span {
-        font-size: 9px
+        font-size: 11.5px
     }
 
     .map-caption a {
-        font-size: 9px;
+        font-size: 11.5px;
         margin-left: 0
     }
 }
