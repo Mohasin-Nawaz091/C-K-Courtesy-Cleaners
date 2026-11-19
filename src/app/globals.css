@@ -11,7 +11,10 @@
     --muted: #6c746d;
     --line: #dfe3dc;
     --display: "DM Serif Display", Georgia, serif;
-    --sans: "Manrope", Arial, sans-serif
+    --sans: "Manrope", Arial, sans-serif;
+    --topline-height: 38px;
+    --header-height: 88px;
+    --nav-total-height: calc(var(--topline-height) + var(--header-height));
 }
 
 * {
@@ -442,7 +445,8 @@ img {
 }
 
 .hero {
-    min-height: clamp(480px, 64vh, 620px);
+    min-height: calc(100vh - var(--nav-total-height, 126px));
+    min-height: calc(100dvh - var(--nav-total-height, 126px));
     height: auto;
     position: relative;
     background: #35463b;
@@ -470,13 +474,14 @@ img {
 .hero-content {
     position: relative;
     z-index: 2;
-    min-height: clamp(480px, 64vh, 620px);
+    min-height: calc(100vh - var(--nav-total-height, 126px));
+    min-height: calc(100dvh - var(--nav-total-height, 126px));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-top: clamp(24px, 4vh, 44px);
-    padding-bottom: clamp(44px, 5vh, 65px)
+    padding-top: clamp(24px, 4vh, 48px);
+    padding-bottom: clamp(52px, 7vh, 80px)
 }
 
 .hero h1,
@@ -1827,7 +1832,13 @@ img {
 
     .hero {
         height: auto;
-        min-height: 460px
+        min-height: calc(100vh - var(--nav-total-height, 126px));
+        min-height: calc(100dvh - var(--nav-total-height, 126px));
+    }
+
+    .hero-content {
+        min-height: calc(100vh - var(--nav-total-height, 126px));
+        min-height: calc(100dvh - var(--nav-total-height, 126px));
     }
 
     .hero h1 {
@@ -1899,6 +1910,11 @@ img {
 }
 
 @media(max-width:620px) {
+    :root {
+        --topline-height: 36px;
+        --header-height: 76px;
+    }
+
     body {
         font-size: 15px
     }
@@ -1951,7 +1967,8 @@ img {
 
     .hero {
         height: auto;
-        min-height: 400px
+        min-height: calc(100vh - var(--nav-total-height, 112px));
+        min-height: calc(100dvh - var(--nav-total-height, 112px));
     }
 
     .hero-photo {
@@ -1963,9 +1980,10 @@ img {
     }
 
     .hero-content {
-        min-height: 400px;
-        padding-top: 20px;
-        padding-bottom: 44px
+        min-height: calc(100vh - var(--nav-total-height, 112px));
+        min-height: calc(100dvh - var(--nav-total-height, 112px));
+        padding-top: clamp(20px, 4vh, 32px);
+        padding-bottom: clamp(52px, 8vh, 72px)
     }
 
     .hero h1 {
